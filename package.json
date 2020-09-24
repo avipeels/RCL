@@ -2,10 +2,11 @@
   "name": "rcl",
   "version": "1.0.0",
   "description": "rcl",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "start": "styleguidist server",
-    "test": "jest"
+    "test": "jest",
+    "build": "rollup -c"
   },
   "repository": "https://github.com/avipeels/RCL.git",
   "author": "'Avinash <'avinashpsk@gmail.com'>",
@@ -24,9 +25,21 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-styleguidist": "^11.1.0",
-    "webpack": "^4.44.2"
+    "rollup": "^2.28.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.3",
+    "webpack": "^4.44.2",
+    "babel-plugin-module-resolver": "^4.0.0"
   },
   "dependencies": {
     "babel-plugin-module-resolver": "^4.0.0"
+  },
+  "peerDependencies": {
+    "@emotion/core": "10.x",
+    "@emotion/styled": "10.x",
+    "react": "^16.x",
+    "react-dom": "^16.x"
   }
 }
