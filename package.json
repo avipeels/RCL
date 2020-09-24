@@ -4,7 +4,8 @@
   "description": "rcl",
   "main": "index.js",
   "scripts": {
-    "start": "styleguidist server"
+    "start": "styleguidist server",
+    "test": "jest"
   },
   "repository": "https://github.com/avipeels/RCL.git",
   "author": "'Avinash <'avinashpsk@gmail.com'>",
@@ -15,8 +16,11 @@
     "@babel/preset-react": "^7.10.4",
     "@emotion/core": "^10.0.35",
     "@emotion/styled": "^10.0.27",
+    "@testing-library/react": "^11.0.4",
     "babel-loader": "^8.1.0",
     "babel-plugin-emotion": "^10.0.33",
+    "jest": "^26.4.2",
+    "jest-emotion": "^10.0.32",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-styleguidist": "^11.1.0",
